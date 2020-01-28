@@ -1,6 +1,5 @@
 class Application
 
-
   @@items = []
 
   def call(env)
@@ -25,3 +24,5 @@ class Application
     resp.finish
   end
 end
+
+Application.new
