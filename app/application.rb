@@ -11,8 +11,8 @@ class Application
       item_name = req.path.split("/").last
       if item_name == @@items.select {|i| i.name == item_name}
         resp.write item.price
-      else 
-        resp.write
+      else
+        resp.write "oops"
         resp.status = 400
       end
     else
