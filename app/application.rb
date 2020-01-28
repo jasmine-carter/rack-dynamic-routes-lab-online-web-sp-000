@@ -8,7 +8,7 @@ class Application
     resp = Rack::Response.new
     req = Rack::Request.new(env)
 
-    if req.path =="/items"
+    if req.path =="/items/"
       if @@items.include?(item_path)
         item = @@items
       else
