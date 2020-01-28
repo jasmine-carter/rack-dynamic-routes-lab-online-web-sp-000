@@ -25,4 +25,3 @@ class Application
   end
 end
 
-Application.new
