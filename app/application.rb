@@ -9,11 +9,11 @@ class Application
 
     if req.path =="/items/"
       item_name = req.path.split("/").last
-      if item_name == @@items.select {|i| i.name == item_name}
+      if item_name =@@items.select {|i| i.name == item_name}
         resp.write item.price
       else
-        resp.write "oops"
         resp.status = 400
+        resp.write "Item not found"
       end
     else
       resp.write "Route not found"
